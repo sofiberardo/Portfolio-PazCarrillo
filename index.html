@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paz Carrillo — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a class="nav-logo" onclick="showPage('home')">P·C</a>
+    <div class="nav-links">
+      <a class="nav-link active" id="nav-work"    onclick="showPage('home')">Trabajo</a>
+      <a class="nav-link"        id="nav-about"   onclick="showPage('about')">Sobre mí</a>
+      <a class="nav-link"        id="nav-contact" onclick="showPage('contact')">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- CURSOR PERSONALIZADO -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- ===================== HOME ===================== -->
+  <div id="page-home" class="page">
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero-bg-text">DISEÑO</div>
+      <div class="hero-content">
+        <p class="hero-label">Portfolio de Diseño</p>
+        <h1 class="hero-title">
+          <span class="hero-word" data-delay="0">Paz</span>
+          <span class="hero-word hero-italic" data-delay="100">Carrillo</span>
+        </h1>
+        <p class="hero-sub">Identidad de marca · Tipografía · Packaging · Digital</p>
+      </div>
+      <div class="hero-scroll-hint">
+        <div class="scroll-track"><div class="scroll-thumb"></div></div>
+        <span>Deslizá</span>
+      </div>
+    </header>
+
+    <!-- PROJECTS STRIP -->
+    <section class="strip-section">
+      <div class="strip-label">
+        <span>Proyectos seleccionados</span>
+        <span>09</span>
+      </div>
+      <div class="strip" id="strip">
+
+        <div class="strip-card" data-id="1" style="--c:#1a1a1a;--tc:#c8b89a;">
+          <div class="sc-inner">
+            <div class="sc-bg"></div>
+            <div class="sc-tag">BRANDING</div>
+            <div class="sc-info">
+              <span class="sc-num">01</span>
+              <h2 class="sc-title">Aurum Studio</h2>
+              <p class="sc-cat">Identidad de Marca</p>
+            </div>
+            <div class="sc-arrow">↗</div>
+          </div>
+        </div>
+
+        <div class="strip-card strip-card--tall" data-id="2" style="--c:#e8e0d5;--tc:#5a4a3a;">
+          <div class="sc-inner">
+            <div class="sc-bg"></div>
+            <div class="sc-tag">TIPOGRAFÍA</div>
+            <div class="sc-info">
+              <span class="sc-num">02</span>
+              <h2 class="sc-title">Serif Study</h2>
+              <p class="sc-cat">Diseño Tipográfico</p>
+            </div>
+            <div class="sc-arrow">↗</div>
+          </div>
+        </div>
+
+        <div class="strip-card strip-card--wide" data-id="3" style="--c:#2d4a3e;--tc:#a8c5b5;">
+          <div class="sc-inner">
+            <div class="sc-bg"></div>
+            <div class="sc-tag">PACKAGING</div>
+            <div class="sc-info">
+              <span class="sc-num">03</span>
+              <h2 class="sc-title">Terra Botanica</h2>
+              <p class="sc-cat">Packaging</p>
+            </div>
+            <div class="sc-arrow">↗</div>
+          </div>
+        </div>
+
+        <div class="strip-card" data-id="4" style="--c:#3a2d4a;--tc:#b5a8c5;">
+          <div class="sc-inner">
+            <div class="sc-bg"></div>
+            <div class="sc-tag">WEB</div>
+            <div class="sc-info">
+              <span class="sc-num">04</span>
+              <h2 class="sc-title">Lumière Digital</h2>
+              <p class="sc-cat">Diseño Web</p>
+            </div>
+            <div class="sc-arrow">↗</div>
+          </div>
+        </div>
+
+        <div class="strip-card" data-id="5" style="--c:#c9a84c;--tc:#1a1a1a;">
+          <div class="sc-inner">
+            <div class="sc-bg"></div>
+            <div class="sc-tag">EDITORIAL</div>
+            <div class="sc-info">
+              <span class="sc-num">05</span>
+              <h2 class="sc-title">Forma Magazine</h2>
+              <p class="sc-cat">Diseño Editorial</p>
+            </div>
+            <div class="sc-arrow">↗</div>
+          </div>
+        </div>
+
+        <div class="strip-card strip-card--tall" data-id="6" style="--c:#f0ebe3;--tc:#5a4a3a;">
+          <div class="sc-inner">
+            <div class="sc-bg"></div>
+            <div class="sc-tag">IDENTIDAD</div>
+            <div class="sc-info">
+              <span class="sc-num">06</span>
+              <h2 class="sc-title">Blanc Collective</h2>
+              <p class="sc-cat">Identidad de Marca</p>
+            </div>
+            <div class="sc-arrow">↗</div>
+          </div>
+        </div>
+
+        <div class="strip-card" data-id="7" style="--c:#1c2b4a;--tc:#a8b8d5;">
+          <div class="sc-inner">
+            <div class="sc-bg"></div>
+            <div class="sc-tag">MOTION</div>
+            <div class="sc-info">
+              <span class="sc-num">07</span>
+              <h2 class="sc-title">Kinetic Type</h2>
+              <p class="sc-cat">Motion Design</p>
+            </div>
+            <div class="sc-arrow">↗</div>
+          </div>
+        </div>
+
+        <div class="strip-card strip-card--wide" data-id="8" style="--c:#e85d4a;--tc:#fff0ee;">
+          <div class="sc-inner">
+            <div class="sc-bg"></div>
+            <div class="sc-tag">PÓSTER</div>
+            <div class="sc-info">
+              <span class="sc-num">08</span>
+              <h2 class="sc-title">Vivid Series</h2>
+              <p class="sc-cat">Diseño de Póster</p>
+            </div>
+            <div class="sc-arrow">↗</div>
+          </div>
+        </div>
+
+        <div class="strip-card" data-id="9" style="--c:#d4c5b0;--tc:#3a2a1a;">
+          <div class="sc-inner">
+            <div class="sc-bg"></div>
+            <div class="sc-tag">BRANDING</div>
+            <div class="sc-info">
+              <span class="sc-num">09</span>
+              <h2 class="sc-title">Maison Douceur</h2>
+              <p class="sc-cat">Packaging · Marca</p>
+            </div>
+            <div class="sc-arrow">↗</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ===================== PROJECT ===================== -->
+  <div id="page-project" class="page" style="display:none;">
+    <div class="proj-fullscreen" id="proj-fullscreen">
+      <div class="proj-fs-bg" id="proj-fs-bg"></div>
+      <div class="proj-fs-content">
+        <div class="proj-fs-meta">
+          <span class="proj-fs-num" id="pfs-num"></span>
+          <span class="proj-fs-cat" id="pfs-cat"></span>
+          <span class="proj-fs-year" id="pfs-year"></span>
+        </div>
+        <h1 class="proj-fs-title" id="pfs-title"></h1>
+        <p class="proj-fs-role" id="pfs-role"></p>
+      </div>
+    </div>
+    <div class="proj-detail">
+      <p class="proj-desc" id="pfs-desc"></p>
+      <div class="proj-gallery-scroll" id="proj-gallery-scroll">
+        <div class="pgs-item" id="pgs-1"></div>
+        <div class="pgs-item pgs-item--tall" id="pgs-2"></div>
+        <div class="pgs-item" id="pgs-3"></div>
+        <div class="pgs-item pgs-item--wide" id="pgs-4"></div>
+      </div>
+    </div>
+    <div class="proj-bottom-nav">
+      <a class="pbn-link" id="pbn-prev" onclick="">
+        <span class="pbn-dir">← Anterior</span>
+        <span class="pbn-name" id="pbn-prev-name"></span>
+      </a>
+      <a class="pbn-back" onclick="showPage('home')">Ver todo el trabajo</a>
+      <a class="pbn-link pbn-link--right" id="pbn-next">
+        <span class="pbn-dir">Siguiente →</span>
+        <span class="pbn-name" id="pbn-next-name"></span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ===================== ABOUT ===================== -->
+  <div id="page-about" class="page" style="display:none;">
+    <main class="about-page">
+      <div class="about-split">
+        <div class="about-photo">
+          <div class="about-photo-inner">
+            <span>Foto</span>
+          </div>
+          <div class="about-photo-deco"></div>
+        </div>
+        <div class="about-text">
+          <p class="hero-label">Sobre mí</p>
+          <h1 class="about-title">Paz<br/><em>Carrillo</em></h1>
+          <p class="about-tagline">Diseñadora gráfica con base en Buenos Aires</p>
+          <div class="about-bio">
+            <p>Soy diseñadora gráfica con más de seis años de experiencia creando identidades visuales, sistemas editoriales y experiencias digitales que se sienten tanto pensadas como vivas.</p>
+            <p>Creo que el buen diseño nunca es accidental. Emerge de una comprensión profunda del contexto, la audiencia y la intención. Ya sea desarrollando una marca desde cero o refinando un sistema tipográfico, traigo el mismo rigor y curiosidad a cada proyecto.</p>
+          </div>
+          <div class="about-skills-grid">
+            <div class="asg-block">
+              <h3 class="asg-title">Especialidades</h3>
+              <ul>
+                <li>Identidad de Marca</li>
+                <li>Tipografía</li>
+                <li>Packaging</li>
+                <li>Editorial & Print</li>
+                <li>Diseño Web & UI</li>
+                <li>Motion Design</li>
+              </ul>
+            </div>
+            <div class="asg-block">
+              <h3 class="asg-title">Herramientas</h3>
+              <ul>
+                <li>Adobe Illustrator</li>
+                <li>Adobe InDesign</li>
+                <li>Figma</li>
+                <li>After Effects</li>
+                <li>Photoshop</li>
+              </ul>
+            </div>
+          </div>
+          <a class="about-cta-btn" onclick="showPage('contact')">Trabajemos juntos →</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- ===================== CONTACT ===================== -->
+  <div id="page-contact" class="page" style="display:none;">
+    <main class="contact-page">
+      <div class="contact-top">
+        <p class="hero-label">Contacto</p>
+        <h1 class="contact-title">Hagamos<br/><em>algo</em><br/>juntos.</h1>
+      </div>
+      <div class="contact-grid">
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Nombre</label>
+              <input class="form-input" type="text" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input class="form-input" type="email" placeholder="tu@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Tipo de proyecto</label>
+            <select class="form-input form-select">
+              <option value="">Seleccioná una categoría</option>
+              <option>Identidad de Marca</option>
+              <option>Packaging</option>
+              <option>Editorial / Print</option>
+              <option>Diseño Web</option>
+              <option>Motion</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Mensaje</label>
+            <textarea class="form-input form-textarea" placeholder="Contame sobre tu proyecto..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit" id="form-btn">Enviar mensaje →</button>
+          <p class="form-success" id="form-success">¡Mensaje enviado! Te respondo pronto.</p>
+        </form>
+        <div class="contact-info">
+          <div class="ci-block">
+            <h3 class="ci-title">Email</h3>
+            <a href="mailto:hola@pazcarrillo.com" class="ci-link">hola@pazcarrillo.com</a>
+          </div>
+          <div class="ci-block">
+            <h3 class="ci-title">Ubicación</h3>
+            <p class="ci-text">Buenos Aires, Argentina<br/>Disponible mundialmente</p>
+          </div>
+          <div class="ci-block">
+            <h3 class="ci-title">Redes</h3>
+            <div class="ci-socials">
+              <a href="#" class="ci-social">Instagram</a>
+              <a href="#" class="ci-social">Behance</a>
+              <a href="#" class="ci-social">LinkedIn</a>
+              <a href="#" class="ci-social">Dribbble</a>
+            </div>
+          </div>
+          <div class="ci-block">
+            <h3 class="ci-title">Disponibilidad</h3>
+            <p class="ci-text"><span class="avail-dot"></span>Disponible para proyectos freelance</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Paz Carrillo</p>
+    <p>Diseñado con intención</p>
+  </footer>
+
+<script>
+/* ============ DATA ============ */
+const PROJECTS = [
+  { id:1, title:"Aurum Studio",    cat:"Identidad de Marca",   year:"2024", role:"Dirección de Arte, Diseño de Identidad", color:"#1a1a1a", tc:"#c8b89a", desc:"Identidad visual completa para un estudio creativo de lujo en Buenos Aires. El sistema se construye en torno a un monograma geométrico y una paleta dorada cálida que expresa el compromiso del estudio con la artesanía y el refinamiento." },
+  { id:2, title:"Serif Study",     cat:"Diseño Tipográfico",   year:"2024", role:"Tipografía, Diseño de Tipos",            color:"#e8e0d5", tc:"#5a4a3a", desc:"Una exploración de las formas serif de transición a través de una serie de pósters editoriales. Cada composición pone a prueba los límites entre legibilidad y textura, usando solo letras como elemento visual primario." },
+  { id:3, title:"Terra Botanica",  cat:"Packaging",            year:"2023", role:"Packaging, Ilustración",                color:"#2d4a3e", tc:"#a8c5b5", desc:"Identidad de packaging para una línea de skincare orgánico inspirada en botánicas andinas. Ilustraciones a mano combinadas con tipografía terrosa comunican los orígenes naturales de la marca." },
+  { id:4, title:"Lumière Digital", cat:"Diseño Web",           year:"2024", role:"UI/UX, Diseño Web",                     color:"#3a2d4a", tc:"#b5a8c5", desc:"Diseño web para un colectivo fotográfico parisino. La interfaz prioriza imágenes a pantalla completa con una mínima presencia de elementos UI, dejando que el trabajo respire." },
+  { id:5, title:"Forma Magazine",  cat:"Diseño Editorial",     year:"2023", role:"Dirección Editorial, Layout",           color:"#c9a84c", tc:"#1a1a1a", desc:"Una publicación bianual dedicada a la arquitectura y la cultura material. El sistema de grilla acomoda páginas tipográficas densas y amplias fotografías, creando un ritmo que recompensa la lectura sostenida." },
+  { id:6, title:"Blanc Collective",cat:"Identidad de Marca",   year:"2024", role:"Estrategia de Marca, Identidad",        color:"#f0ebe3", tc:"#5a4a3a", desc:"Identidad de marca para un colectivo creativo multidisciplinario. El lenguaje visual es deliberadamente contenido — espacio en blanco, tipografía refinada y un único acento cobrizo." },
+  { id:7, title:"Kinetic Type",    cat:"Motion Design",        year:"2023", role:"Motion Design, Dirección",              color:"#1c2b4a", tc:"#a8b8d5", desc:"Una serie de piezas de motion que exploran cómo el ritmo tipográfico puede reflejar el tiempo musical. Cada pieza está compuesta para una obra específica." },
+  { id:8, title:"Vivid Series",    cat:"Diseño de Póster",     year:"2022", role:"Diseño de Póster, Ilustración",         color:"#e85d4a", tc:"#fff0ee", desc:"Seis pósters de gran formato encargados para un festival internacional de cine. Cada uno referencia una década diferente del cine a través del color y la composición." },
+  { id:9, title:"Maison Douceur",  cat:"Packaging · Marca",    year:"2024", role:"Identidad de Marca, Packaging",         color:"#d4c5b0", tc:"#3a2a1a", desc:"Sistema completo de branding y packaging para una pâtisserie inspirada en París en Montevideo. Tonos suaves, tipografía elegante y cajas envueltas en papel de seda capturan el romance de la confitería francesa." },
+];
+
+/* ============ CURSOR ============ */
+const cur = document.getElementById('cursor');
+const curF = document.getElementById('cursor-follower');
+let mx = 0, my = 0, fx = 0, fy = 0;
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+function animateCursor() {
+  fx += (mx - fx) * 0.12;
+  fy += (my - fy) * 0.12;
+  cur.style.transform  = `translate(${mx}px,${my}px) translate(-50%,-50%)`;
+  curF.style.transform = `translate(${fx}px,${fy}px) translate(-50%,-50%)`;
+  requestAnimationFrame(animateCursor);
+}
+animateCursor();
+document.querySelectorAll('a, button, .strip-card, .nav-link, .nav-logo').forEach(el => {
+  el.addEventListener('mouseenter', () => { cur.classList.add('cursor--hover'); curF.classList.add('cursor--hover'); });
+  el.addEventListener('mouseleave', () => { cur.classList.remove('cursor--hover'); curF.classList.remove('cursor--hover'); });
+});
+
+/* ============ NAV ============ */
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20);
+}, { passive: true });
+
+/* ============ ROUTER ============ */
+function showPage(page) {
+  ['home','project','about','contact'].forEach(p => {
+    document.getElementById('page-'+p).style.display = 'none';
+  });
+  document.getElementById('page-'+page).style.display = 'block';
+  ['work','about','contact'].forEach(l => document.getElementById('nav-'+l).classList.remove('active'));
+  const map = { home:'work', project:'work', about:'about', contact:'contact' };
+  document.getElementById('nav-'+map[page]).classList.add('active');
+  window.scrollTo({ top: 0 });
+  if (page === 'home') initStrip();
+}
+
+/* ============ STRIP DRAG SCROLL ============ */
+let isDragging = false, startX = 0, scrollLeft = 0, velocity = 0, lastX = 0, rafId = null;
+
+function initStrip() {
+  const strip = document.getElementById('strip');
+  if (!strip) return;
+
+  // Parallax on cards while scrolling strip
+  strip.addEventListener('scroll', () => {
+    const cards = strip.querySelectorAll('.sc-bg');
+    cards.forEach(bg => {
+      const card = bg.closest('.strip-card');
+      const rect = card.getBoundingClientRect();
+      const center = rect.left + rect.width / 2;
+      const vw = window.innerWidth;
+      const offset = ((center / vw) - 0.5) * 40;
+      bg.style.transform = `scale(1.15) translateX(${offset}px)`;
+    });
+  }, { passive: true });
+
+  // Mouse drag
+  strip.addEventListener('mousedown', e => {
+    isDragging = true;
+    strip.classList.add('is-dragging');
+    startX = e.pageX - strip.offsetLeft;
+    scrollLeft = strip.scrollLeft;
+    lastX = e.pageX;
+    velocity = 0;
+    cancelAnimationFrame(rafId);
+  });
+  strip.addEventListener('mouseleave', () => { isDragging = false; strip.classList.remove('is-dragging'); momentum(strip); });
+  strip.addEventListener('mouseup', () => { isDragging = false; strip.classList.remove('is-dragging'); momentum(strip); });
+  strip.addEventListener('mousemove', e => {
+    if (!isDragging) return;
+    e.preventDefault();
+    velocity = e.pageX - lastX;
+    lastX = e.pageX;
+    const x = e.pageX - strip.offsetLeft;
+    strip.scrollLeft = scrollLeft - (x - startX);
+  });
+
+  // Touch drag
+  let touchStartX = 0, touchScrollLeft = 0;
+  strip.addEventListener('touchstart', e => { touchStartX = e.touches[0].pageX; touchScrollLeft = strip.scrollLeft; velocity = 0; }, { passive: true });
+  strip.addEventListener('touchmove', e => {
+    const dx = e.touches[0].pageX - touchStartX;
+    velocity = e.touches[0].pageX - lastX;
+    lastX = e.touches[0].pageX;
+    strip.scrollLeft = touchScrollLeft - dx;
+  }, { passive: true });
+  strip.addEventListener('touchend', () => momentum(strip));
+
+  // Click on card
+  strip.querySelectorAll('.strip-card').forEach(card => {
+    card.addEventListener('click', () => {
+      if (Math.abs(velocity) < 3) showProject(+card.dataset.id);
+    });
+  });
+
+  animateCards();
+}
+
+function momentum(strip) {
+  cancelAnimationFrame(rafId);
+  function step() {
+    if (Math.abs(velocity) < 0.5) return;
+    strip.scrollLeft -= velocity;
+    velocity *= 0.93;
+    rafId = requestAnimationFrame(step);
+  }
+  step();
+}
+
+/* ============ CARD ENTRANCE ============ */
+function animateCards() {
+  const cards = document.querySelectorAll('.strip-card');
+  cards.forEach((c, i) => {
+    c.style.opacity = '0';
+    c.style.transform = 'translateY(30px) scale(0.97)';
+    setTimeout(() => {
+      c.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      c.style.opacity = '1';
+      c.style.transform = 'translateY(0) scale(1)';
+    }, 80 + i * 70);
+  });
+}
+
+/* ============ PROJECT ============ */
+function showProject(id) {
+  const p = PROJECTS.find(x => x.id === id);
+  const prev = PROJECTS[(id - 2 + PROJECTS.length) % PROJECTS.length];
+  const next = PROJECTS[id % PROJECTS.length];
+
+  const bg = document.getElementById('proj-fs-bg');
+  bg.style.background = p.color;
+  bg.style.color = p.tc;
+
+  setText('pfs-num',  `0${p.id}`);
+  setText('pfs-cat',  p.cat);
+  setText('pfs-year', p.year);
+  setText('pfs-title',p.title);
+  setText('pfs-role', p.role);
+  setText('pfs-desc', p.desc);
+
+  const colors = [p.color, '#e8e0d5', '#1a1a1a', p.color];
+  const tcs    = [p.tc,    '#5a4a3a', '#c8b89a', p.tc];
+  [1,2,3,4].forEach((n,i) => {
+    const el = document.getElementById('pgs-'+n);
+    el.style.background = colors[i];
+    el.style.color = tcs[i];
+    el.style.opacity = '0.45';
+    el.textContent = p.title;
+  });
+
+  document.getElementById('pbn-prev-name').textContent = prev.title;
+  document.getElementById('pbn-next-name').textContent = next.title;
+  document.getElementById('pbn-prev').onclick = (e) => { e.preventDefault(); showProject(prev.id); };
+  document.getElementById('pbn-next').onclick = (e) => { e.preventDefault(); showProject(next.id); };
+
+  showPage('project');
+
+  // Animate project page in
+  const fs = document.getElementById('proj-fullscreen');
+  fs.style.clipPath = 'inset(100% 0 0 0)';
+  requestAnimationFrame(() => {
+    fs.style.transition = 'clip-path 0.8s cubic-bezier(0.76,0,0.24,1)';
+    fs.style.clipPath = 'inset(0% 0 0 0)';
+  });
+
+  // Stagger gallery
+  setTimeout(() => {
+    [1,2,3,4].forEach((n,i) => {
+      const el = document.getElementById('pgs-'+n);
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(40px)';
+      setTimeout(() => {
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        el.style.opacity = '0.45';
+        el.style.transform = 'translateY(0)';
+      }, 200 + i * 120);
+    });
+  }, 400);
+}
+
+function setText(id, v) { const e = document.getElementById(id); if (e) e.textContent = v; }
+
+/* ============ HERO PARALLAX ============ */
+window.addEventListener('scroll', () => {
+  const heroText = document.querySelector('.hero-content');
+  const heroBg = document.querySelector('.hero-bg-text');
+  if (!heroText) return;
+  const s = window.scrollY;
+  heroText.style.transform = `translateY(${s * 0.35}px)`;
+  heroText.style.opacity = 1 - s / 500;
+  if (heroBg) heroBg.style.transform = `translateY(${s * 0.15}px)`;
+}, { passive: true });
+
+/* ============ FORM ============ */
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('form-btn');
+  btn.textContent = 'Enviando…';
+  btn.disabled = true;
+  setTimeout(() => {
+    btn.style.display = 'none';
+    document.getElementById('form-success').style.display = 'block';
+    this.reset();
+  }, 1200);
+});
+
+/* ============ INIT ============ */
+showPage('home');
+</script>
+</body>
+</html>
